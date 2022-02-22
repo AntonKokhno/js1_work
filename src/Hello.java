@@ -17,7 +17,6 @@ public class Hello {
         jFrame.setSize(800, 600);
 
         JTextPane jTextPane = new JTextPane();
-        jTextPane.setText("I LOVE JAVA");
 
         jFrame.add(jTextPane);
 
