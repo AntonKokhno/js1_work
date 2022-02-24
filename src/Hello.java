@@ -1,25 +1,22 @@
-import javax.swing.*;
+
 
 public class Hello {
-  //this is name of the man
-     String name = "Ivan";
 
-     int height = 189;
-
-     /*
-     This is main method
-     of class Hello
-      */
     public static void main(String[] args) {
-
+        System.out.println();
         System.out.println("Hello World " + args[0]);
-        JFrame jFrame = new JFrame("Hello Java");
-        jFrame.setSize(800, 600);
+      Car myCar;
+      myCar= new Car();
+      myCar.getPrice();
+      System.out.println(myCar.price );
+        System.out.println(myCar.model );
 
-        JTextPane jTextPane = new JTextPane();
-
-        jFrame.add(jTextPane);
-
-        jFrame.setVisible(true);
+    }
+}
+class Car{
+    int price;
+    String model ;
+    public int getPrice() {
+        return 100;
     }
 }
